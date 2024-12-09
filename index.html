@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <link href="output.css" rel="stylesheet">
+    </head>
+    <body class="bg-indigo-950">
+        <div class="grid grid-cols-4 grid-flow-row w-2/5 mx-auto gap-x-4">
+            <h1 class="mt-24 mb-24 text-center text-4xl text-violet-300 font-bold col-span-4">
+                Sophia Jennifer Rose
+            </h1>
+            <ul class="space-y-2">
+                <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">About me</li>
+                <input type="checkbox" id="games" class="hidden peer h-0 border-0">
+                <label for="games" class="after:content-['▼'] peer-[:checked]:after:content-['▲'] after:text-violet-200 after:float-right after:-mt-6 block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 peer-[:checked]:bg-violet-500 peer-[:checked]:hover:bg-violet-400 rounded-xl p-4 text-violet-100 font-bold">
+                    <li>Games</li>
+                </label>
+                <li class="hidden peer-[:checked]:block h-0 peer-[:checked]:h-auto my-0">
+                    <ul class="space-y-2">
+                        <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 ml-8 text-violet-100 font-bold">Box Cluttering Chaos</li>
+                        <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 ml-8 text-violet-100 font-bold">Flow Runner</li>
+                        <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 ml-8 text-violet-100 font-bold">Flash In The Dark</li>
+                    </ul>
+                </li>
+                <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Other projects</li>
+                <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">CV</li>
+            </ul>
+            <div class="bg-indigo-800 rounded-xl p-4 text-violet-200 col-span-3">
+                Content goes here
+            </div>
+        </div>
+    </body>
+</html>
