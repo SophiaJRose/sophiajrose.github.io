@@ -4,30 +4,58 @@
         <meta charset="UTF-8">
         <meta name="viewport">
         <link href="output.css" rel="stylesheet">
+        <script src="index.js" defer></script>
     </head>
     <body class="bg-indigo-950">
-        <div class="grid grid-cols-4 grid-flow-row w-2/5 mx-auto gap-x-4">
-            <h1 class="mt-24 mb-24 text-center text-4xl text-violet-300 font-bold col-span-4">
+        <div class="grid grid-cols-5 grid-flow-row w-3/5 mx-auto gap-x-4">
+            <h1 class="mt-16 mb-4 py-8 bg-indigo-900 rounded-xl text-center text-4xl text-violet-300 font-bold col-span-5">
                 Sophia Jennifer Rose
             </h1>
             <ul class="space-y-2">
-                <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">About me</li>
+                <li>
+                    <a href="javascript:location.replace('#about'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">About me</a>
+                </li>
                 <input type="checkbox" id="games" class="hidden peer h-0 border-0">
-                <label for="games" class="after:content-['▼'] peer-[:checked]:after:content-['▲'] after:text-violet-200 after:float-right after:-mt-6 block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 peer-[:checked]:bg-violet-500 peer-[:checked]:hover:bg-violet-400 rounded-xl p-4 text-violet-100 font-bold">
+                <label for="games" class="z-10 relative before:content-['▼'] peer-[:checked]:before:content-['▲'] before:text-violet-200 before:float-right block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 peer-[:checked]:bg-violet-500 peer-[:checked]:hover:bg-violet-400 rounded-xl p-4 text-violet-100 font-bold">
                     <li>Games</li>
                 </label>
-                <li class="hidden peer-[:checked]:block h-0 peer-[:checked]:h-auto my-0">
-                    <ul class="space-y-2">
-                        <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 ml-8 text-violet-100 font-bold">Box Cluttering Chaos</li>
-                        <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 ml-8 text-violet-100 font-bold">Flow Runner</li>
-                        <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 ml-8 text-violet-100 font-bold">Flash In The Dark</li>
+                <li class="z-0 relative h-fit scale-y-0 peer-[:checked]:scale-y-100 -translate-y-44 peer-[:checked]:-translate-y-14 transition-all duration-100 ease-in-out mt-0 mb-0">
+                    <ul class="space-y-0 bg-violet-800 ml-4 rounded-xl p-2">
+                        <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-2 text-violet-100 font-bold">--</li>
+                        <li>
+                            <a href="javascript:location.replace('#bcc'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Box Cluttering Chaos</a>
+                        </li>
+                        <li>
+                            <a href="javascript:location.replace('#fr'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Flow Runner</a>
+                        </li>
+                        <li>
+                            <a href="javascript:location.replace('#fitd'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Flash In The Dark</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Other projects</li>
-                <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">CV</li>
+                <li class="-translate-y-[14.5rem] peer-[:checked]:-translate-y-14 transition-all duration-100 ease-in-out">
+                    <a href="javascript:location.replace('#other'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Other projects</a>
+                </li>
+                <li class="-translate-y-[14.5rem] peer-[:checked]:-translate-y-14 transition-all duration-100 ease-in-out">
+                    <a href="sophia-j-rose-cv.pdf" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">CV</a>
+                </li>
             </ul>
-            <div class="bg-indigo-800 rounded-xl p-4 text-violet-200 col-span-3">
-                Content goes here
+            <div class="bg-indigo-800 rounded-xl p-4 text-violet-200 col-span-4">
+                <div id="about" class="hidden">
+                    About me
+                </div>
+                <div id="bcc" class="hidden">
+                    Box Cluttering Chaos
+                </div>
+                <div id="fr" class="hidden">
+                    Flow Runner
+                </div>
+                <div id="fitd" class="hidden">
+                    Flash In The Dark
+                </div>
+                <div id="other" class="hidden">
+                    Other Projects
+                </div>
             </div>
         </div>
     </body>
