@@ -1,9 +1,9 @@
 "use strict";
 const contentIds = [
     "about",
-    "bcc",
-    "fr",
     "fitd",
+    "fr",
+    "bcc",
     "other"
 ];
 const contentNodes = new Map();
@@ -13,7 +13,6 @@ for (let id of contentIds) {
 function displayContent() {
     let selectedId = "about";
     let hash = location.hash.substring(1);
-    console.log(hash);
     if (contentIds.includes(hash)) {
         selectedId = hash;
     }

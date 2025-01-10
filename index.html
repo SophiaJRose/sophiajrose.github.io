@@ -1,60 +1,104 @@
 <!doctype html>
 <html>
     <head>
+        <title>Sophia Jennifer Rose</title>
         <meta charset="UTF-8">
-        <meta name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="output.css" rel="stylesheet">
         <script src="index.js" defer></script>
     </head>
     <body class="bg-indigo-950">
-        <div class="grid grid-cols-5 grid-flow-row w-3/5 mx-auto gap-x-4">
-            <h1 class="mt-16 mb-4 py-8 bg-indigo-900 rounded-xl text-center text-4xl text-violet-300 font-bold col-span-5">
+        <div class="grid grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 grid-flow-row w-full sm:w-[640px] md:w-[768px] lg:w-[896px] xl:w-[1024px] 2xl:w-[1280px] px-1 lg:px-0 mx-auto gap-x-2 lg:gap-x-4">
+            <h1 class="mt-16 mb-4 py-8 bg-indigo-900 rounded-xl text-center text-3xl leading-10 text-violet-300 font-bold col-span-3 xl:col-span-4 2xl:col-span-5">
                 Sophia Jennifer Rose
             </h1>
-            <ul class="space-y-2">
+            <div class="sm:hidden bg-rose-300 -mt-2 mb-2 rounded-xl p-2 text-rose-700 col-span-3">
+                <span class="font-bold">Note:</span> This website doesn't look great on thin displays. If you're on mobile, I'd recommend rotating your phone.
+            </div>
+            <ul class="space-y-2 relative">
                 <li>
-                    <a href="javascript:location.replace('#about'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">About me</a>
+                    <a href="javascript:location.replace('#about'); location.reload();" class="block truncate bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl px-2 lg:px-4 py-4 text-violet-100 font-bold">About me</a>
                 </li>
                 <input type="checkbox" id="games" class="hidden peer h-0 border-0">
-                <label for="games" class="z-10 relative before:content-['▼'] peer-[:checked]:before:content-['▲'] before:text-violet-200 before:float-right block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 peer-[:checked]:bg-violet-500 peer-[:checked]:hover:bg-violet-400 rounded-xl p-4 text-violet-100 font-bold">
+                <label for="games" class="z-10 relative before:content-['▼'] peer-[:checked]:before:content-['▲'] before:text-violet-200 before:float-right block truncate bg-violet-600 hover:bg-violet-500 active:bg-violet-700 peer-[:checked]:bg-violet-500 peer-[:checked]:hover:bg-violet-400 rounded-xl px-2 lg:px-4 py-4 text-violet-100 font-bold cursor-pointer">
                     <li>Games</li>
                 </label>
-                <li class="z-0 relative h-fit scale-y-0 peer-[:checked]:scale-y-100 -translate-y-44 peer-[:checked]:-translate-y-14 transition-all duration-100 ease-in-out mt-0 mb-0">
-                    <ul class="space-y-0 bg-violet-800 ml-4 rounded-xl p-2">
-                        <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-2 text-violet-100 font-bold">--</li>
+                <li class="z-0 relative h-fit scale-y-0 peer-[:checked]:scale-y-100 origin-top -translate-y-14 transition-all duration-100 ease-in-out mt-0 mb-0">
+                    <ul class="space-y-0 bg-violet-800 md:ml-4 rounded-xl p-2">
+                        <li class="bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-2 text-violet-100 font-bold truncate">--</li>
                         <li>
-                            <a href="javascript:location.replace('#bcc'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Box Cluttering Chaos</a>
+                            <a href="javascript:location.replace('#fitd'); location.reload();" title="Flash In The Dark" class="block truncate bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl px-2 lg:px-4 py-4 text-violet-100 font-bold">Flash In The Dark</a>
                         </li>
                         <li>
-                            <a href="javascript:location.replace('#fr'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Flow Runner</a>
+                            <a href="javascript:location.replace('#fr'); location.reload();" title="Flow Runner" class="block truncate bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl px-2 lg:px-4 py-4 text-violet-100 font-bold">Flow Runner</a>
                         </li>
                         <li>
-                            <a href="javascript:location.replace('#fitd'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Flash In The Dark</a>
+                            <a href="javascript:location.replace('#bcc'); location.reload();" title="Box Cluttering Chaos" class="block truncate bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl px-2 lg:px-4 py-4 text-violet-100 font-bold">Box Cluttering Chaos</a>
                         </li>
                     </ul>
                 </li>
                 <li class="-translate-y-[14.5rem] peer-[:checked]:-translate-y-14 transition-all duration-100 ease-in-out">
-                    <a href="javascript:location.replace('#other'); location.reload();" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">Other projects</a>
+                    <a href="javascript:location.replace('#other'); location.reload();" title="Other projects" class="block truncate bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl px-2 lg:px-4 py-4 text-violet-100 font-bold">Other projects</a>
                 </li>
                 <li class="-translate-y-[14.5rem] peer-[:checked]:-translate-y-14 transition-all duration-100 ease-in-out">
-                    <a href="sophia-j-rose-cv.pdf" class="block bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl p-4 text-violet-100 font-bold">CV</a>
+                    <a href="sophia-j-rose-cv.pdf" title="Last updated 10.01.25" class="block truncate bg-violet-600 hover:bg-violet-500 active:bg-violet-700 rounded-xl px-2 lg:px-4 py-4 text-violet-100 font-bold before:content-['10.01.25'] sm:before:content-['Last_updated_10.01.25'] before:text-violet-300 before:text-sm before:font-normal before:italic before:float-right">CV</a>
+                </li>
+                <li class="-translate-y-[14.5rem] peer-[:checked]:-translate-y-14 transition-all duration-100 ease-in-out absolute right-0">
+                    <a rel="external" title="My GitHub profile" href="https://github.com/SophiaJRose"><img src="assets/github-mark-white.svg" class="inline h-8 w-8 mr-1"></a>
+                    <a rel="external" title="My itch.io profile" href="https://sophiajrose.itch.io"><img src="assets/itchio-textless-white.svg" class="inline h-8 w-8 mr-1"></a>
                 </li>
             </ul>
-            <div class="bg-indigo-800 rounded-xl p-4 text-violet-200 col-span-4">
-                <div id="about" class="hidden">
-                    About me
+            <div class="bg-indigo-800 rounded-xl p-4 text-violet-200 col-span-2 xl:col-span-3 2xl:col-span-4 relative after:content-['Website_last_updated_10.01.25'] after:text-violet-400 after:text-sm after:italic after:absolute after:bottom-4 after:right-4">
+                <div id="about" class="hidden mb-8">
+                    <p class="whitespace-pre-line">Hi, my name is Sophia Jennifer Rose (she/her). I am an aspiring software developer with an interest in video game development, and I have made this website as a place to show some of my work, gamedev and otherwise.
+                    
+                        I am a trans woman, based in the Greater Glasgow region of Scotland. After completing my Master's Degree in Computer Science at the University of Glasgow, I became a professional software developer, and I am currently looking for my next role as such. My professional experience so far is in Java, but I like to use my personal projects to experiment with other languages, such as TypeScript and Ruby, and I am always happy to learn new languages and toolsets.
+
+                        I like to regularly participate in game jams, as an outlet for my interest in game development. Ideally, I would one day like to pursue a career in game development, whether as part of a larger studio, or developing my own indie titles.
+                    </p>
                 </div>
-                <div id="bcc" class="hidden">
-                    Box Cluttering Chaos
+                <div id="fitd" class="hidden mb-8">
+                    <img class="hidden lg:block float-right ml-4 border-2 border-violet-300" src="https://img.itch.zone/aW1nLzE1MTY3MzI1LnBuZw==/315x250%23c/ptlg9t.png">
+                    <h2 class="text-xl text-violet-300 font-bold mb-4">Flash in the Dark</h2>
+                    <p class="whitespace-pre-line">Made using the Godot Engine in under 48 hours, this game was my entry for the <a class="text-violet-300 underline" rel="external" href="https://www.ducksauce.games/duck-sauce-jam-2024">Duck Sauce Jam 2024</a> by <a class="text-violet-300 underline" rel="external" href="https://www.ducksauce.games/">Duck Sauce Games</a>, for the theme of "Discovery".
+
+                        This is a 2D puzzle-platformer, where you're trapped in a series of dark rooms. When you flash your light, you discover hidden clues to guide you towards the exit. Some clues will always appear, some only appear if you flash your light close to them. Remember the clues well, as your light needs to recharge, taking longer with each use. There are 5 rooms to escape.
+
+                        <a class="text-violet-400 font-bold underline" rel="external" href="https://sophiajrose.itch.io/flash-in-the-dark">Play here</a>
+
+                    </p>
+                    <img class="lg:hidden float-right mt-2 mb-8 border-2 border-violet-300" src="https://img.itch.zone/aW1nLzE1MTY3MzI1LnBuZw==/315x250%23c/ptlg9t.png">
                 </div>
-                <div id="fr" class="hidden">
-                    Flow Runner
+                <div id="fr" class="hidden mb-8">
+                    <img class="hidden lg:block float-right ml-4 border-2 border-violet-300" src="https://img.itch.zone/aW1nLzExNDM0NTIxLnBuZw==/315x250%23c/AosL7t.png">
+                    <h2 class="text-xl text-violet-300 font-bold mb-4">Flow Runner</h2>
+                    <p class="whitespace-pre-line">Inspired by the theme "Flow", this game was my entry for the <a class="text-violet-300 underline" rel="external" href="https://www.ducksauce.games/duck-sauce-jam-2023">Duck Sauce Jam 2023</a> by <a class="text-violet-300 underline" rel="external" href="https://www.ducksauce.games/">Duck Sauce Games</a>, made in under 48 hours using the Godot Engine.
+
+                        In this first-person 3D platformer, your goal is to survive as long as you can while your health slowly depletes. Standing still drains your health faster, while grabbing the golden orbs appearing around the arena replenishes it. Keeping an uninterrupted flow of movement is vital as you make your way from one orb to the next, to ensure you'll make it in time.
+                    
+                        <a class="text-violet-400 font-bold underline" rel="external" href="https://sophiajrose.itch.io/flow-runner">Play here</a>
+
+                    </p>
+                    <img class="lg:hidden float-right mt-2 mb-8 border-2 border-violet-300" src="https://img.itch.zone/aW1nLzExNDM0NTIxLnBuZw==/315x250%23c/AosL7t.png">
                 </div>
-                <div id="fitd" class="hidden">
-                    Flash In The Dark
+                <div id="bcc" class="hidden mb-8">
+                    <img class="hidden lg:block float-right ml-4 border-2 border-violet-300" src="https://img.itch.zone/aW1nLzgyNjE4MjcucG5n/315x250%23c/HbVZar.png">
+                    <h2 class="text-xl text-violet-300 font-bold mb-4">Box Cluttering Chaos</h2>
+                    <p class="whitespace-pre-line">Made in under 24 hours using the Godot Engine, this game was my entry for the <a class="text-violet-300 underline" rel="external" href="https://www.ducksauce.games/duck-sauce-jam-2022">Duck Sauce Jam 2022</a> by <a class="text-violet-300 underline" rel="external" href="https://www.ducksauce.games/">Duck Sauce Games</a>, which had the theme of "Chaos".
+
+                        This is a simple 2D game, where you explode arrangements of boxes to try to get them as cluttered as possible. Your score is determined by the distance each box reaches from its starting point, with various bonuses to further boost your score. You have a limited number of explosions to use, so you need to position them strategically to maximise your score. Box arrangements are slightly randomized each time you play, to keep the game varied.
+                    
+                        <a class="text-violet-400 font-bold underline" rel="external" href="https://sophiajrose.itch.io/box-cluttering-chaos">Play here</a>
+
+                    </p>
+                    <img class="lg:hidden float-right mt-2 mb-8 border-2 border-violet-300" src="https://img.itch.zone/aW1nLzgyNjE4MjcucG5n/315x250%23c/HbVZar.png">
                 </div>
-                <div id="other" class="hidden">
-                    Other Projects
+                <div id="other" class="hidden mb-8">
+                    <h2 class="text-lg text-violet-300 font-medium mb-4">Other miscellaneous projects I've made</h2>
+                    <ul class="ml-8 list-disc">
+                        <li>This website, made with Tailwind and TypeScript.</li>
+                        <li><a class="text-violet-300 underline" href="https://sophiajrose.github.io/AdventOfCode2024/">Advent of Code 2024</a>: A simple webpage to run my solutions for Advent of Code 2024, also made with Tailwind and TypeScript.</li>
+                    </ul>
                 </div>
             </div>
         </div>
