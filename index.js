@@ -1,6 +1,7 @@
 "use strict";
 const contentIds = [
     "about",
+    "hr",
     "fitd",
     "fr",
     "bcc",

@@ -1,5 +1,6 @@
 const contentIds: string[] = [
     "about",
+    "hr",
     "fitd",
     "fr",
     "bcc",
